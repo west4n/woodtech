@@ -9,13 +9,15 @@
 	<title>Woodtech - Создаём тёплую атмосферу вашего отдыха</title>
 	<meta name="description" content="Компания Woodtech - Создаём тёплую атмосферу вашего отдыха">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<link rel="icon" href="images/favicon.png">
 	<!-- <meta property="og:image" content="images/preview.jpg"> -->
 
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
 
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -27,22 +29,84 @@
 	<div class="navbar">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-3 col-6">
 					<div class="logo">
 						<a href="#" class="logo__link"><i></i>Woodtech <span>Architecture</span></a>
 					</div>
 				</div>
-				<div class="col-md-6">asd</div>
-				<div class="col-md-3">asd</div>
+				<div class="col-md-9 col-lg-6 col-6 menu-container">
+					<i class="menu-toggle"></i>
+					<ul class="top-menu">
+						<li class="top-menu__item"><span class="top-menu__link">Главная</span></li>
+						<li class="top-menu__item"><a href="#" class="top-menu__link">Проекты</a></li>
+						<li class="top-menu__item"><a href="#" class="top-menu__link">Услуги</a></li>
+						<li class="top-menu__item"><a href="#" class="top-menu__link">Блог</a></li>
+						<li class="top-menu__item"><a href="#" class="top-menu__link">Компания</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 d-none d-lg-block nav-social-wrap">
+					<div class="nav-social">
+						<a href="#" class="nav-social__item"><img src="images/img/instagram-brands.svg" alt="instagram"></a>
+						<a href="#" class="nav-social__item"><img src="images/img/vk.svg" alt="vk"></a>
+						<a href="#" class="nav-social__item"><img src="images/img/facebook-brands.svg" alt="facebook"></a>
+						<a href="#" class="nav-social__item"><img src="images/img/twitter-brands.svg" alt="twitter"></a>
+					</div>	
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="home-slider">
-
+		<div class="swiper-wrapper">
+			<div class="swiper-slide home-slider__slide" style="background-image: url(images/portfolio/interior-3.jpg);">
+				<div class="container">
+					<h2 data-animate="bottom" class="home-slider__heading">
+						Woodhouse дизайн на высоком уровне
+					</h2>
+					<p data-animate="bottom" class="home-slider__text">
+						Разработка и реализация красивых интерьеров из дерева ещё никогда не была так доступна. Интерьеры из дерева различной породы сделают ваш дом уютным и тёплым, радуя вас и ваших гостей.
+					</p>
+				</div>
+			</div>
+			<div class="swiper-slide home-slider__slide" style="background-image: url(images/portfolio/interior-1.jpg);">
+				<div class="container">
+					<h2 data-animate="bottom" class="home-slider__heading">
+						Интерьер в современном стиле
+					</h2>
+					<p data-animate="bottom" class="home-slider__text">
+						Разработка и реализация красивых интерьеров из дерева ещё никогда не была так доступна. Интерьеры из дерева различной породы сделают ваш дом уютным и тёплым, радуя вас и ваших гостей.
+					</p>
+				</div>
+			</div>
+			<div class="swiper-slide home-slider__slide" style="background-image: url(images/portfolio/installation-1.jpg);">
+				<div class="container">
+					<h2 data-animate="bottom" class="home-slider__heading">
+						Деревянные инсталяции любой сложности
+					</h2>
+					<p data-animate="bottom" class="home-slider__text">
+						Разработка и реализация красивых интерьеров из дерева ещё никогда не была так доступна. Интерьеры из дерева различной породы сделают ваш дом уютным и тёплым, радуя вас и ваших гостей.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row home-slider__bottom">
+			<div class="col-3 home-slider__pagination-wrapper">
+				<div class="home-slider__pagination swiper-pagination">
+					
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="home-slider__scrollbar swiper-scrollbar"></div>
+			</div>
+			<div class="col-3 home-slider__nav">
+				<div class="home-slider__prev swiper-button-prev"></div>
+				<div class="home-slider__next swiper-button-next"></div>
+			</div>
+		</div>
 	</div>
 
 	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/swiper/swiper-bundle.min.js"></script>
 
 	<script src="js/common.js"></script>
 
